@@ -1,17 +1,31 @@
-# Use Case 1: User Registration
+# UC1: Initialize Train and Display Consist Summary
 ## Goal
-Allow a new user to register by entering email, name, and password with early validation.
+Initialize the Train Consist Management App and display the initial state of the train.
+## Actor
+User
+## Flow
+User runs the program
+Application prints welcome message
+Train consist is initialized
+The initial bogie count is displayed
+Program continues
 
-## Responsibilities
-Read user input (email, name, password)
-Validate required fields (no blank email)
-Validate correct email format (early abort if invalid)
-Trigger registration flow via UserService.registerUser()
-Handle validation failures using exceptions
+## Key Concepts Used
+Class
+Main Method
+Static keyword
+ArrayList (dynamic list)
+List Interface abstraction
+Console Output
+Dynamic Initialization
 
-## Demonstrated Concepts
-Basic console input reading
-Early validation (fail-fast)
-Exception handling (invalid/blank email)
-Separation of concerns (UI → Service → Repository)
-Object creation through service layer
+## Key Requirements
+Create Train App class
+Print welcome message
+Initialize empty list using ArrayList
+Display bogie count using size()
+
+## Key Benefits
+Introduces startup flow
+Demonstrates dynamic collections
+Creates foundation for further UCs
